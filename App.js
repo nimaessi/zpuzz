@@ -6,7 +6,6 @@ import Game from './components/Game';
 import SplashScreen from './components/SplashScreen';
 import Home from './components/Home';
 import TicTacToe from './components/TicTacToe';
-import Test from './components/Test';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
