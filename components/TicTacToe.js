@@ -16,7 +16,6 @@ const TicTacToe = () => {
   const [snack, setSnack] = useState(false);
   const [resultGame,setResultGame] = useState('draw');
   const { SharePrefModule } = NativeModules;
-  const colorScheme = useColorScheme();
  
   const clickBoard = (i) =>{
     if(!disable){
@@ -88,9 +87,10 @@ const TicTacToe = () => {
       resizeMode='cover' 
       style={{flex:1}}>
       <View style={styles.segContainer}>
-        <SegBtn setType={setType}/>
+        <SegBtn setType={setType} reset={reset}/>
       </View>
       <View style={styles.container}>
+          <Text style={styles.typeGame}>{type} player</Text>
           <View style={styles.row}>
               <Surface style={styles.surfaceTop} elevation={4}>
                   <TouchableOpacity style={styles.xo} onPress={() => clickBoard(0)}>

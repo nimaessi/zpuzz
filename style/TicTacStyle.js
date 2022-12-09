@@ -6,6 +6,12 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    typeGame:{
+      fontFamily:'PermanentMarker-Regular',
+      fontSize: 18,
+      marginBottom: 20,
+      color: '#34A853'
+    },
     container:{
       flex: 9,
       alignItems: 'center',

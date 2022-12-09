@@ -7,6 +7,7 @@ const SegBtn = (props) => {
   const [visible, setVisible] = React.useState(false);
   const openMenu = () => setVisible(true);
   const closeMenu = (type) => {
+    props.reset();
     props.setType(type);
     setVisible(false);
   }
